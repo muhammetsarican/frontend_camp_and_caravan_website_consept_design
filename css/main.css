@@ -1,0 +1,434 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(55, 62, 63);
+}
+body::-webkit-scrollbar-thumb {
+  background: rgb(236, 184, 92);
+  border-radius: 0.1rem;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255);
+}
+
+#navigation {
+  background: linear-gradient(50deg, rgb(63, 101, 90) 5%, rgb(26, 33, 35) 28%, rgb(63, 101, 90) 29%);
+  color: rgb(255, 255, 255);
+  padding: 0 0.3rem;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+  padding: 1rem;
+  min-height: 80px;
+}
+#navigation .items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navigation .items .item:nth-child(2) {
+  width: 25%;
+  color: rgb(236, 184, 92);
+}
+#navigation .items .item:nth-child(3) {
+  width: 35%;
+}
+#navigation .items .item:nth-child(3) ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+#navigation .items .item:nth-child(3) ul li {
+  padding: 0.5rem 1rem;
+}
+#navigation .items .item:nth-child(3) ul li:hover {
+  border-bottom: 1.5px solid rgb(236, 184, 92);
+}
+#navigation .items .item:nth-child(3) ul li:hover a {
+  color: rgb(236, 184, 92);
+}
+#navigation .items .item:nth-child(3) ul li:last-child {
+  background: rgb(26, 33, 35);
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  margin: 0 0.5rem;
+}
+#navigation .items .item:nth-child(3) ul li:last-child:hover {
+  background: rgb(255, 255, 255);
+}
+#navigation .items .item:nth-child(3) ul li:last-child:hover a {
+  color: black;
+}
+#navigation .items .item .btn {
+  background-color: rgb(236, 184, 92);
+}
+#navigation .items .item .btn i {
+  padding: 0 0.2rem;
+}
+
+#landing {
+  height: 100vh;
+  background-image: url("/assets/images/background_3.png");
+  background-repeat: no-repeat;
+  padding: 1rem 6.5rem;
+  background-position: -410px -100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+#landing .content .items .item {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(60deg, rgb(55, 62, 63) 70%, rgb(98, 105, 106) 95%);
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#landing .content .items .item .top {
+  color: rgb(236, 184, 92);
+  display: flex;
+  justify-content: space-between;
+}
+#landing .content .items .item .body h1 {
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  color: rgb(236, 184, 92);
+}
+#landing .content .items .item .body p {
+  width: 500px;
+  color: rgb(255, 255, 255);
+}
+#landing .content .items .item .bottom {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+#landing .content .items .item .bottom .search {
+  display: flex;
+  align-items: center;
+}
+#landing .content .items .item .bottom .search input {
+  width: 100%;
+}
+#landing .content .items .item .bottom .search button {
+  background: rgb(8, 136, 99);
+  padding: 0.5rem 2rem;
+  height: 2.5rem;
+  border-radius: 0.2rem;
+}
+#landing .content .items .item .bottom .search button:hover {
+  background: rgb(236, 184, 92);
+}
+#landing .content .items .item .bottom .last-searches h1 {
+  font-weight: 100;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+#landing .content .items .item .bottom .last-searches ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#landing .content .items .item .bottom .last-searches ul li {
+  opacity: 0.7;
+  border-radius: 0.3rem;
+  padding: 0.7rem 1.2rem;
+  background: rgb(26, 33, 35);
+}
+#landing .content .items .item .bottom .last-searches ul li:hover {
+  background: rgba(0, 0, 0, 0);
+  outline: 1px outset rgb(236, 184, 92);
+  color: rgb(236, 184, 92);
+}
+
+#about {
+  background: linear-gradient(60deg, rgb(17, 44, 42), rgb(63, 101, 90));
+  padding: 2rem 6.5rem;
+}
+#about .items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#about .items .item h1 {
+  color: rgb(236, 184, 92);
+}
+#about .items .item p {
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+#about .items .item .manager-info {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#about .items .item .manager-info .profile-photo img {
+  outline: 1px outset rgb(236, 184, 92);
+  outline-offset: 0.3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  width: 4rem;
+}
+#about .items .item .manager-info .profile-info {
+  padding: 1rem;
+}
+#about .items .item .manager-info .profile-info h1 {
+  font-weight: 100;
+}
+#about .items .item .manager-info .profile-info p {
+  opacity: 0.5;
+}
+#about .items .item:last-child i img {
+  width: 25rem;
+}
+
+#region {
+  height: 100vh;
+  background: url("/assets/images/background-wave.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 2rem 6.5rem;
+}
+#region .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#region .items .item {
+  border-radius: 0.1rem;
+  margin: 0.2rem;
+  width: 24%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+#region .items .item .region-info {
+  display: none;
+  background: rgb(8, 136, 99);
+  text-align: center;
+  width: 100%;
+  padding: 0.2rem 1rem;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  transition: bottom 1s;
+}
+#region .items .item:hover {
+  box-shadow: 0 0 20px rgb(63, 101, 90);
+}
+#region .items .item:hover .region-info {
+  display: block;
+}
+#region .items .item:nth-child(1) {
+  background: url("/assets/images/2560x1440_tent-night-northern-lights-winter-camping.jpg");
+  background-size: cover;
+}
+#region .items .item:nth-child(2) {
+  background: url("/assets/images/3654080.jpg");
+  background-size: cover;
+}
+#region .items .item:nth-child(3) {
+  background: url("/assets/images/5b6ac3a55379fe0148ebc024.jpg");
+  background-size: cover;
+}
+#region .items .item:nth-child(4) {
+  background: url("/assets/images/742586.jpg");
+  background-size: cover;
+}
+#region .items .item:nth-child(5) {
+  background: url("/assets/images/2560x1440_tent-night-northern-lights-winter-camping.jpg");
+  background-size: cover;
+}
+#region .items .item:nth-child(6) {
+  background: url("/assets/images/3654080.jpg");
+  background-size: cover;
+}
+#region .items .item:nth-child(7) {
+  background: url("/assets/images/5b6ac3a55379fe0148ebc024.jpg");
+  background-size: cover;
+}
+#region .items .item:nth-child(8) {
+  background: url("/assets/images/742586.jpg");
+  background-size: cover;
+}
+
+#blog {
+  background: rgb(17, 44, 42);
+  background: linear-gradient(to bottom, rgb(17, 44, 42), rgb(236, 184, 92));
+  color: rgb(255, 255, 255);
+  padding: 2rem 6.5rem;
+}
+#blog h1 {
+  color: rgb(236, 184, 92);
+}
+#blog .items {
+  display: flex;
+}
+#blog .items .item {
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 33%;
+}
+#blog .items .item .left-side .top {
+  position: relative;
+}
+#blog .items .item .left-side .top img {
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+#blog .items .item .left-side .top .blog-info {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  background: rgb(63, 101, 90);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+#blog .items .item .left-side .top .blog-info h1 {
+  margin-bottom: 1rem;
+}
+#blog .items .item .left-side .top .blog-info p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  opacity: 0.6;
+}
+#blog .items .item .left-side .top .blog-info a {
+  opacity: 0.6;
+  height: 1rem;
+  outline: 0.1px outset rgba(255, 255, 255, 0.5);
+  border-radius: 0.3rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+#blog .items .item .left-side .top .blog-info a:hover {
+  opacity: 1;
+}
+#blog .items .item:hover .left-side .top .blog-info {
+  display: flex;
+  animation-name: blogAnimate;
+  animation-duration: 0.5s;
+}
+@keyframes blogAnimate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#comment {
+  background: url("/assets/images/background-wave-2.svg");
+  background-repeat: no-repeat;
+  padding: 2rem 6.5rem;
+}
+#comment h1.heading-xxxlarge {
+  color: rgb(8, 136, 99);
+}
+#comment p.heading-large {
+  color: rgb(63, 101, 90);
+  font-weight: bold;
+}
+#comment .body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#comment .body .left-side .items {
+  padding: 0 1rem;
+  margin: 2rem 0;
+  height: 75vh;
+  overflow: auto;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+#comment .body .left-side .items::-webkit-scrollbar {
+  width: 0.2rem;
+}
+#comment .body .left-side .items::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+#comment .body .left-side .items::-webkit-scrollbar-thumb {
+  background: rgb(236, 184, 92);
+  border-radius: 0.1rem;
+}
+#comment .body .left-side .items::-webkit-scrollbar-thumb:hover {
+  background: rgb(55, 62, 63);
+}
+#comment .body .left-side .items .item {
+  box-shadow: 0 0 10px rgb(63, 101, 90);
+  border-radius: 0.3rem;
+  outline-offset: 0.5rem;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+}
+#comment .body .left-side .items .item:first-child {
+  margin: 0.5rem 0;
+}
+#comment .body .left-side .items .item .top {
+  display: flex;
+  justify-content: space-between;
+}
+#comment .body .left-side .items .item .top .user-info {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#comment .body .left-side .items .item .top .user-info img {
+  width: 3rem;
+  border-radius: 100%;
+}
+#comment .body .left-side .items .item .top .star {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+#comment .body .left-side .items .item .top .star p {
+  font-weight: 900;
+  position: absolute;
+  top: auto;
+  right: 15px;
+}
+#comment .body .left-side .items .item .comment {
+  padding: 1rem 0 0.5rem;
+}/*# sourceMappingURL=main.css.map */

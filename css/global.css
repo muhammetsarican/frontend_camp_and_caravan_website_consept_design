@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+
+.primary-font{
+    font-family: 'Catamaran', sans-serif;
+}
+.secondary-font{
+    font-family: 'Cormorant', serif;
+}
+.tertiary-font{
+    font-family: 'Martel', serif;
+}
+
+.heading-xsmall {
+    font-size: 0.5rem;
+}
+.heading-small {
+    font-size: 0.75rem;
+}
+.heading-medium {
+    font-size: 1rem;
+}
+.heading-large {
+    font-size: 1.25rem;
+}
+.heading-xlarge {
+    font-size: 1.75rem;
+}
+.heading-xxlarge {
+    font-size: 2.25rem;
+}
+.heading-xxxlarge {
+    font-size: 2.75rem;
+}
+.content{
+    max-width: 1100px;
+}
+.btn{
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    border: none;
+    padding: 0.7rem 1rem;
+    margin: 0.2rem;
+
+}
+.input{
+    font-size: 1rem;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border-radius: 0.2rem;
+    border: none;
+    /* max-width: 250px; */
+}
+.input:focus{
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+.text-center{
+    text-align: center;
+}
